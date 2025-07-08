@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "eu-north-1"
+    region = "ap-south-1"
     access_key = var.access_key
     secret_key = var.secret_key
   
@@ -7,8 +7,8 @@ provider "aws" {
 # Triggering pipeline again
 
 resource "aws_instance" "ec2" {
-    ami = "ami-042b4708b1d05f512"
-    instance_type = "t3.micro"
+    ami = "ami-0f918f7e67a3323f0"
+    instance_type = "t2.micro"
 
     tags = {
         Name = "GitHubActions-EC2"
