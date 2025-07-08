@@ -4,6 +4,7 @@ provider "aws" {
     secret_key = var.secret_key
   
 }
+# Triggering pipeline again
 
 resource "aws_instance" "ec2" {
     ami = "ami-042b4708b1d05f512"
